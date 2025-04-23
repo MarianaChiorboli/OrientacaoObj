@@ -8,14 +8,16 @@ public class TestaAluno{
         Aluno a1 = new Aluno("Mari"); // obj diferentes, vieram do mesmo modelo
         Aluno a2 = new Aluno("Murilete", 8.0, 9.0); // obj
         
-        a1.nota1 = 8.0; // ponto "." você acessa ao objeto
-        a1.nota2 = 9.0;
+        //a1.nota1 = 8.0; // ponto "." você acessa ao objeto
+        //a1.nota2 = 9.0;
 
-        a2.nota1 = 10.0;
-        a2.nota2 = 9.5;
+        System.out.println(a1.getNome());
+        a1.setNota1(7.0);
+        a1.setNota2(9.0);
 
+        System.out.printf("Nota 1: %.1f%n", a1.getNota1());
 
-        System.out.println(a1.nome + " " + a1.calculaMedia());
+        System.out.println(a1.getNome()+ " " + a1.calculaMedia());
         System.out.println(a2.calculaMedia());
 
     } 
